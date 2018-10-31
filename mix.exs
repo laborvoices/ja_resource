@@ -4,8 +4,8 @@ defmodule JaResource.Mixfile do
   def project do
     [
       app: :ja_resource,
-      version: "0.3.1",
-      elixir: "~> 1.2",
+      version: "0.4.0",
+      elixir: "~> 1.4",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       source_url: "https://github.com/vt-elixir/ja_resource",
@@ -22,12 +22,12 @@ defmodule JaResource.Mixfile do
 
   defp deps do
     [
-      {:ecto, "~> 2.0"},
-      {:plug, "~> 1.2"},
-      {:phoenix, "~> 1.1"},
-      {:ja_serializer, "~> 0.9"},
-      {:earmark, "~> 1.0.1", only: :dev},
-      {:ex_doc, "~> 0.13", only: :dev}
+      {:ecto, "~> 3.0"},
+      {:plug, "~> 1.7"},
+      {:phoenix, "~> 1.3"},
+      {:ja_serializer, "~> 0.13"},
+      {:earmark, "~> 1.2", only: :dev},
+      {:ex_doc, "~> 0.19", only: :dev}
     ]
   end
 
